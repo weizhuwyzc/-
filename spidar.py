@@ -48,7 +48,7 @@ if __name__ == '__main__':
     classinfo = []
     url = 'https://www.jikexueyuan.com/course/?pageNum=1'
     jikespider = spider();
-    all_links = jikespider.changepage(url, 1)
+    all_links = jikespider.changepage(url, 20)
     # print all_links
     for link in all_links:
         print u'正在处理页面：' + link
